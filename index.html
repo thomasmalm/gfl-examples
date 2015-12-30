@@ -1,0 +1,257 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Examples | Goldfish Lab</title>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/darkula.min.css" rel="stylesheet">
+        <style>
+            body {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+
+            h1 {
+                color: rgba(0, 0, 0, 0.5);
+            }
+
+            h2 {
+                color: rgba(0, 0, 0, 0.3);
+            }
+
+            pre {
+                background-color: transparent;
+                border: 0;
+            }
+
+            code {
+                border-radius: 4px !important;
+                padding-bottom: 20px !important;
+            }
+
+            .row {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+            .col-lg-4 {
+                margin-bottom: 10px;
+            }
+
+            .gfl-example-default .gfl-text-avatar {
+                margin-bottom: 5px;
+            }
+
+            .gfl-example-custom-style .gfl-text-avatar {
+                background-color: #000 !important;
+                border: 2px solid #FFEB3B;
+                box-shadow: 2px 2px 2px #AAA;
+                color: #FFEB3B !important;
+                font-family: Helvetica, Arial, sans-serif !important;
+                font-size: 32px !important;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body ng-app="app">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/gfl-text-avatar/dist/gfl-text-avatar.min.js"></script>
+        <script>
+            (function() {
+                'use strict';
+
+                angular.module('app', [
+                    'gfl.textAvatar'
+                ]);
+            })();
+        </script>
+
+        <div class="container">
+            <h1>gfl-text-avatar</h1>
+
+            <h2>Default</h2>
+
+            <div class="row gfl-example-default">
+                <div class="col-lg-4">
+                    <gfl-text-avatar>A</gfl-text-avatar>
+                    <gfl-text-avatar>B</gfl-text-avatar>
+                    <gfl-text-avatar>C</gfl-text-avatar>
+                    <gfl-text-avatar>D</gfl-text-avatar>
+                    <gfl-text-avatar>E</gfl-text-avatar>
+                    <gfl-text-avatar>F</gfl-text-avatar>
+                    <gfl-text-avatar>G</gfl-text-avatar>
+                    <gfl-text-avatar>H</gfl-text-avatar>
+                    <gfl-text-avatar>I</gfl-text-avatar>
+                    <gfl-text-avatar>J</gfl-text-avatar>
+                    <gfl-text-avatar>K</gfl-text-avatar>
+                    <gfl-text-avatar>L</gfl-text-avatar>
+                    <gfl-text-avatar>M</gfl-text-avatar>
+                    <gfl-text-avatar>N</gfl-text-avatar>
+                    <gfl-text-avatar>O</gfl-text-avatar>
+                    <gfl-text-avatar>P</gfl-text-avatar>
+                    <gfl-text-avatar>Q</gfl-text-avatar>
+                    <gfl-text-avatar>R</gfl-text-avatar>
+                    <gfl-text-avatar>S</gfl-text-avatar>
+                    <gfl-text-avatar>T</gfl-text-avatar>
+                    <gfl-text-avatar>U</gfl-text-avatar>
+                    <gfl-text-avatar>V</gfl-text-avatar>
+                    <gfl-text-avatar>W</gfl-text-avatar>
+                    <gfl-text-avatar>X</gfl-text-avatar>
+                    <gfl-text-avatar>Y</gfl-text-avatar>
+                    <gfl-text-avatar>Z</gfl-text-avatar>
+                </div>
+                <div class="col-lg-8">
+<pre>
+<code>
+    &lt;gfl-text-avatar&gtA&lt;/gfl-text-avatar&gt;
+    &lt;gfl-text-avatar&gtB&lt;/gfl-text-avatar&gt;
+    ...
+</code>
+</pre>
+                </div>
+            </div>
+
+            <h2>Alternative shape</h2>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <gfl-text-avatar shape="square">A</gfl-text-avatar>
+                    <gfl-text-avatar shape="square">B</gfl-text-avatar>
+                    <gfl-text-avatar shape="square">C</gfl-text-avatar>
+                    <gfl-text-avatar shape="square">D</gfl-text-avatar>
+                </div>
+                <div class="col-lg-8">
+<pre>
+<code>
+    &lt;gfl-text-avatar shape="square"&gt;A&lt;/gfl-text-avatar&gt;
+    &lt;gfl-text-avatar shape="square"&gt;B&lt;/gfl-text-avatar&gt;
+    ...
+</code>
+</pre>
+                </div>
+            </div>
+
+            <h2>Alternative size</h2>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <gfl-text-avatar size="80">A</gfl-text-avatar>
+                    <gfl-text-avatar size="60">B</gfl-text-avatar>
+                    <gfl-text-avatar size="30">C</gfl-text-avatar>
+                    <gfl-text-avatar size="20">D</gfl-text-avatar>
+                </div>
+                <div class="col-lg-8">
+<pre>
+<code>
+    &lt;gfl-text-avatar size="80"&gt;A&lt;/gfl-text-avatar&gt;
+    &lt;gfl-text-avatar size="60"&gt;B&lt;/gfl-text-avatar&gt;
+    &lt;gfl-text-avatar size="30"&gt;C&lt;/gfl-text-avatar&gt;
+    &lt;gfl-text-avatar size="20"&gt;D&lt;/gfl-text-avatar&gt;
+</code>
+</pre>
+                </div>
+            </div>
+
+            <h2>Alternative color</h2>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <gfl-text-avatar bg-color="#F48FB1" text-color="#000">Jane Doe</gfl-text-avatar>
+                    <gfl-text-avatar bg-color="#90CAF9" text-color="#000">John Doe</gfl-text-avatar>
+                </div>
+                <div class="col-lg-8">
+<pre>
+<code>
+    &lt;gfl-text-avatar bg-color="#F48FB1" text-color="#000"&gt;Jane Doe&lt;/gfl-text-avatar&gt;
+    &lt;gfl-text-avatar bg-color="#90CAF9" text-color="#000"&gt;John Doe&lt;/gfl-text-avatar&gt;
+</code>
+</pre>
+                </div>
+            </div>
+
+            <h2>Custom style</h2>
+
+            <div class="row gfl-example-custom-style">
+                <div class="col-lg-4">
+                    <gfl-text-avatar size="75">Star Wars</gfl-text-avatar>
+                </div>
+                <div class="col-lg-8">
+<pre>
+<code>
+    &lt;gfl-text-avatar size="75"&gt;Star Wars&lt;/gfl-text-avatar&gt;
+</code>
+</pre>
+<pre>
+<code>
+    .gfl-text-avatar {
+        background-color: #000 !important;
+        border: 2px solid #FFEB3B;
+        box-shadow: 2px 2px 2px #AAA;
+        color: #FFEB3B !important;
+        font-family: Helvetica, Arial, sans-serif !important;
+        font-size: 32px !important;
+        font-weight: bold;
+    }
+</code>
+</pre>
+                </div>
+            </div>
+
+            <h2>Bootstrap Media list</h2>
+
+            <div class="row gfl-example-media-list">
+                <div class="col-lg-4">
+                    <div class="media">
+                        <div class="media-left">
+                            <gfl-text-avatar>Darth Vader</gfl-text-avatar>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Darth Vader</h4>
+
+                            <p class="text-muted">David Prowse</p>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <gfl-text-avatar>Luke Skywalker</gfl-text-avatar>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Luke Skywalker</h4>
+
+                            <p class="text-muted">Mark Hamill</p>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <gfl-text-avatar>Princess Leia Organa</gfl-text-avatar>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Princess Leia Organa</h4>
+
+                            <p class="text-muted">Carrie Fisher</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+<pre>
+<code>
+    &lt;div class="media"&gt;
+        &lt;div class="media-left"&gt;
+            &lt;gfl-text-avatar&gt;Darth Vader&lt;/gfl-text-avatar&gt;
+        &lt;div&gt;
+        &lt;div class="media-body"&gt;
+            &lt;h4 class="media-heading"&gt;Darth Vader&lt;/h4&gt;
+            &lt;p class="text-muted"&gt;David Prowse&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    ...
+</code>
+</pre>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
