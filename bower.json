@@ -2,6 +2,6 @@
   "name": "gfl-examples",
   "dependencies": {
     "angular": "~1.4.8",
-    "gfl-text-avatar": "~0.1.0"
+    "gfl-text-avatar": "~0.1.1"
   }
 }
