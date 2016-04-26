@@ -40,6 +40,7 @@
 
             .gfl-example-default .gfl-text-avatar {
                 margin-bottom: 5px;
+                margin-right: 5px;
             }
 
             .gfl-example-custom-style .gfl-text-avatar {
@@ -66,42 +67,30 @@
                 angular.module('app', [
                     'gfl.textAvatar'
                 ]);
+
+                angular
+                        .module('app')
+                        .controller('ExampleController', ExampleController);
+
+                function ExampleController() {
+                    var initials = [];
+                    initials = initials.concat(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M']);
+                    initials = initials.concat(['N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']);
+
+                    var vm = this;
+                    vm.initials = initials;
+                }
             })();
         </script>
 
-        <div class="container">
+        <div class="container" ng-controller="ExampleController as vm">
             <h1>gfl-text-avatar</h1>
 
             <h2>Default</h2>
 
             <div class="row gfl-example-default">
                 <div class="col-lg-4">
-                    <gfl-text-avatar>A</gfl-text-avatar>
-                    <gfl-text-avatar>B</gfl-text-avatar>
-                    <gfl-text-avatar>C</gfl-text-avatar>
-                    <gfl-text-avatar>D</gfl-text-avatar>
-                    <gfl-text-avatar>E</gfl-text-avatar>
-                    <gfl-text-avatar>F</gfl-text-avatar>
-                    <gfl-text-avatar>G</gfl-text-avatar>
-                    <gfl-text-avatar>H</gfl-text-avatar>
-                    <gfl-text-avatar>I</gfl-text-avatar>
-                    <gfl-text-avatar>J</gfl-text-avatar>
-                    <gfl-text-avatar>K</gfl-text-avatar>
-                    <gfl-text-avatar>L</gfl-text-avatar>
-                    <gfl-text-avatar>M</gfl-text-avatar>
-                    <gfl-text-avatar>N</gfl-text-avatar>
-                    <gfl-text-avatar>O</gfl-text-avatar>
-                    <gfl-text-avatar>P</gfl-text-avatar>
-                    <gfl-text-avatar>Q</gfl-text-avatar>
-                    <gfl-text-avatar>R</gfl-text-avatar>
-                    <gfl-text-avatar>S</gfl-text-avatar>
-                    <gfl-text-avatar>T</gfl-text-avatar>
-                    <gfl-text-avatar>U</gfl-text-avatar>
-                    <gfl-text-avatar>V</gfl-text-avatar>
-                    <gfl-text-avatar>W</gfl-text-avatar>
-                    <gfl-text-avatar>X</gfl-text-avatar>
-                    <gfl-text-avatar>Y</gfl-text-avatar>
-                    <gfl-text-avatar>Z</gfl-text-avatar>
+                    <gfl-text-avatar ng-repeat="initial in vm.initials">{{initial}}</gfl-text-avatar>
                 </div>
                 <div class="col-lg-8">
 <pre>
